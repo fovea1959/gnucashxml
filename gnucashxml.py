@@ -108,7 +108,7 @@ class Commodity(object):
         self.xcode = xcode
 
     def __str__(self):
-        return self.name
+        return self.name or self.symbol
 
     def __repr__(self):
         return "<Commodity {}:{}>".format(self.space, self.name)
